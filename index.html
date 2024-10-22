@@ -66,6 +66,19 @@
       text-decoration: none;
     }
 
+    .search input {
+      border: none;
+      outline: none;
+      background: transparent;
+      color: white;
+      padding: 5px;
+      width: 150px;
+    }
+
+    .search i {
+      margin-left: 8px;
+    }
+
     i {
       color: white;
     }
@@ -120,8 +133,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 20px;
-      padding: 20px;
+      padding-top: 20px; 
       background-color: #f5f5f5;
+      border-top: 2px solid black;
     }
 
     footer img {
@@ -130,7 +144,14 @@
       object-fit: cover;
     }
 
-    
+    footer div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* padding: 10px;  */
+    }
+
+    /* Media Queries */
     @media (max-width: 1024px) {
       .menu {
         gap: 10px;
@@ -240,7 +261,8 @@
     
     <div class="right-icons">
       <div class="search">
-        <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Search</a>
+        <input type="text" placeholder="Search...">
+        <i class="fa-solid fa-magnifying-glass"></i>
       </div>
       <div><a href="#"><i class="fa-regular fa-heart"></i></a></div>
       <div><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></div>
@@ -270,10 +292,10 @@
       <img src="Screenshot 2024-10-21 162422.png" alt="">
     </div>
     <div>
-      <img src="https://cdn.sanity.io/images/qa41whrn/prod/a880cd3844ab934956316c2df1cbda6002b01d51-6000x2167.jpg?w=2160&q=80&auto=format" alt="">
+      <img src="https://cdn.sanity.io/images/qa41zefh/production/56c064106f85769f7d6b6587c82217d6032c963d-550x783.jpg?w=784&q=75&fit=clip&auto=format" alt="">
     </div>
   </main>
-  
+
   <footer>
     <img src="/Screenshot 2024-10-21 163349.png" alt="">
   </footer>
